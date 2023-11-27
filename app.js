@@ -8,7 +8,7 @@ const updateProductDescription = document.querySelector('#update-description');
 
 // Function to fetch all products from the server
 async function fetchProducts() {
-  const response = await fetch('http://3.138.61.142:3000/products');
+  const response = await fetch('http://ip:3000/products');
   const products = await response.json();
 
   products.sort((a, b) => b.price - a.price);
